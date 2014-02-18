@@ -1,0 +1,188 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Untitled Document</title>
+<link href="estilos.css" rel="stylesheet" type="text/css">
+
+<link rel="stylesheet" href="slide/themes/light/light.css" type="text/css" media="screen" />
+       <link rel="stylesheet" href="slide/themes/bar/bar.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="slide/scripts/nivo-slider.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="slide/scripts/style.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="slide/themes/dark/dark.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="slide/themes/default/default.css" type="text/css" media="screen" />
+<link href="lightbox.css" rel="stylesheet" />
+
+
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/lightbox-2.6.min.js"></script>
+
+
+<script type="text/javascript" src="slide/scripts/jquery-1.9.0.min.js"></script>
+    <script type="text/javascript" src="slide/scripts/jquery.nivo.slider.js"></script>
+    <script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider();
+    });
+    </script>
+    
+<script type="text/javascript">
+    $(document).ready(function(){ 
+ 
+        $(window).scroll(function(){
+            if ($(this).scrollTop() > 100) {
+                $('.scrollup').fadeIn();
+            } else {
+                $('.scrollup').fadeOut();
+            }
+        }); 
+ 
+        $('.scrollup').click(function(){
+            $("html, body").animate({ scrollTop: 0 }, 1000);
+            return false;
+        });
+ 
+    });
+</script>   
+
+<script>
+
+$(function(){
+    $('#menu').data('size','big');
+});
+
+$(window).scroll(function(){
+    var $nav = $('#menu');
+    if ($('body').scrollTop() > 0) {
+        if ($nav.data('size') == 'big') {
+            $nav.data('size','small').stop().animate({
+                height:'25px'
+            }, 600);
+        }
+    } else {
+        if ($nav.data('size') == 'small') {
+            $nav.data('size','big').stop().animate({
+                height:'36px'
+            }, 600);
+        }  
+    }
+}); 
+</script>
+
+
+
+</head>
+
+<body>
+<div id="wrap">
+<div id="menu">
+<ul>
+<li><a href="#">home</a></li>
+<li><a href="#">portfolio</a></li>
+<li><a href="#">resume</a></li>
+<li><a href="#">contact</a></li>
+<li><a href="#">blog</a></li>
+<li><a href="#">cv</a></li>
+<li><a href="#">pages</a></li>
+<li><a href="#">purchase</a></li>
+<li></li>
+
+</ul>
+
+
+</div>
+
+<div id="banner">
+<div class="slider-wrapper theme-default">
+  
+  <div id="slider" class="nivoSlider">
+
+<img src="imagens/slide-1.jpg" width="940" height="600" alt="" data-transition="fade" />
+
+
+<img src="imagens/slide2.jpg" width="940" height="600" alt="" data-transition="fade" />
+
+<img src="imagens/slide3.jpg" width="940" height="600" alt="" data-transition="fade" />
+
+            </div>
+  </div>
+
+</div>
+
+<div id="main">
+<h1>george hanson</h1>
+<h2>Graphic Designer, Photographer</h2>
+<p>Ut at dui nisi. Vestibulum rutrum mi et erat consequat ultricies. Aenean eu iaculis 
+justo, eu adipiscing neque. Donec tincidunt nisl nulla, vitae aliquam nisi sodales in. 
+Proin imperdiet tincidunt elit, quis cursus dolor accumsan sit amet. Suspendisse sit 
+amet interdum eros, sit amet tincidunt massa. Praesent eleifend, libero et scelerisque 
+tempus, lectus sapien fermentum nunc, sit amet varius ante massa quis elit. Nulla quis mi 
+a enim vestibulum blandit. Pellentesque habitant morbi tristique senectus et netus et 
+malesuada fames ac turpis egestas. Mauris lacus elit, tincidunt vel ultrices eu, lobortis
+ sed nisi. Praesent ac eros consectetur, malesuada urna quis, mattis dui. Praesent eleifend
+  tempor lacus ac rhoncus. Donec interdum turpis quis auctor condimentum. Curabitur dolor
+   urna, auctor quis ipsum egestas, convallis placerat erat. Etiam pellentesque blandit 
+   cursus. Suspendisse ullamcorper lorem et bibendum aliquet.</p>
+   <div class="assinatura"><img src="imagens/signiture1.png" width="118" height="71"></div>
+</div>
+
+<div id="portfolio">
+<h2>portfolio</h2>
+<ul>
+<li><a href="#">video</a></li>
+<li><a href="#">photography</a></li>
+<li><a href="#">fashion</a></li>
+<li><a href="#">design</a></li>
+<li><a href="#">audio</a></li>
+<li><a href="#">view all</a></li>
+</ul>
+
+<div class="photos"> 
+<a href="imagens/resume-popup-8.jpg" data-lightbox="roadtrip" title="imagem 1">
+<img src="imagens/portfolio-post-8.jpg" width="295" height="178" class="imagens_esq">
+</a>
+<a href="imagens/resume-popup-10.jpg" data-lightbox="roadtrip" title="imagem 2">
+<img src="imagens/portfolio-post-10.jpg" width="295" height="178" class="imagens_esq">
+</a>
+<a href="imagens/DC_tees_198.jpg" data-lightbox="roadtrip" title="imagem 3">
+<img src="imagens/portfolio-post-111.jpg" width="295" height="178" class="imagens_dir">
+</a>
+<a href="imagens/IMG_3532.jpg" data-lightbox="roadtrip" title="imagem 4">
+<img src="imagens/portfolio-post-7.jpg" width="295" height="178" class="imagens_esq">
+</a>
+<a href="imagens/resume-popup-5.jpg" data-lightbox="roadtrip" title="imagem 5">
+<img src="imagens/portfolio-post-5.jpg" width="295" height="178" class="imagens_esq">
+</a>
+<a href="imagens/resume-popup-4.jpg" data-lightbox="roadtrip" title="imagem 6">
+<img src="imagens/portfolio-popup-4.jpg" width="295" height="178" class="imagens_dir">
+</a>
+<a href="imagens/resume-popup-3.jpg" data-lightbox="roadtrip" title="imagem 7">
+<img src="imagens/portfolio-post-3.jpg" width="295" height="178" class="imagens_esq">
+</a>
+<a href="imagens/resume-popup-2.jpg" data-lightbox="roadtrip" title="imagem 8">
+<img src="imagens/portfolio-popup-2.jpg" width="295" height="178" class="imagens_esq">
+</a>
+<a href="imagens/resume-popup-1.jpg" data-lightbox="roadtrip" title="imagem 9">
+<img src="imagens/portfolio-post-1.jpg" width="295" height="178" class="imagens_dir">
+</a>
+
+
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<a href="#" class="scrollup" style="display: inline;">Scroll</a>
+</body>
+</html>
